@@ -52,7 +52,8 @@
 
         <div class="container-fluid" style="width: 100%; padding-right: 0px; padding-left: 0px; margin-right: 0px; margin-left: 0px;">
             <a href="registrodeventas.html"><i class="icon-plus-sign"></i> Nueva Venta </a>
-            <a href="nuevoCliente.html"><i class="icon-plus-sign"></i> Nuevo Cliente </a>
+            <a href="#nuevo-cliente" data-toggle="modal"><i class="icon-plus"></i>Nuevo Cliente
+                                </a>
             <div class="well container">
                 <table class="table-bordered">
                     Seleccione un cliente:
@@ -132,7 +133,7 @@
                 <table class="table-bordered" style="width: 100%">
                     <br>
                     <tr>
-                        <td><b> Producto </b></td>
+                        <td><b>Producto </b></td>
                         <td><b>Marca</b></td>
                         <td><b>Color </b> </td>
                         <td><b> Codigo </b> </td>
@@ -208,7 +209,104 @@
                 </div>
             </div>
         </div>
+ <div id="nuevo-cliente" class="modal hide fade nav6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+                <h3 id="myModalLabel">Nuevo Cliente</h3>
+            </div>
+            <div class="modal-body">
+                 <div class="clearfix">
+                        <form class="form-horizontal">
+                        <fieldset class="well">
+                            <!-- Text input-->
+                            <div class="control-group">
+                                <label class="control-label" for="textinput">Nombre:</label>
+                                <div class="controls">
+                                    <input id="textinput" name="textinput" placeholder="escriba su nombre" class="input-xlarge" type="text">
+                                </div>
+                            </div>
 
+                            <!-- Text input-->
+                            <div class="control-group">
+                                <label class="control-label" for="textinput">Apellido:</label>
+                                <div class="controls">
+                                    <input id="textinput" name="textinput" placeholder="escriba su apellido" class="input-xlarge" type="text">
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="control-group">
+                                <label class="control-label" for="textinput">DUI:</label>
+                                <div class="controls">
+                                    <input id="textinput" name="textinput" placeholder="escriba su numero de dui" class="input-xlarge" type="text">
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="control-group">
+                                <label class="control-label" for="textinput">NIT:</label>
+                                <div class="controls">
+                                    <input id="textinput" name="textinput" placeholder="escriba su numero de nit" class="input-xlarge" type="text">
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="control-group">
+                                <label class="control-label" for="textinput">Telefono(Opcional)</label>
+                                <div class="controls">
+                                    <input id="textinput" name="textinput" placeholder="escriba su numero de telefono" class="input-xlarge" type="text">
+                                </div>
+                            </div>
+                            
+                            <div class="control-group">
+                                <label class="control-label" for="textinput"> Ciudad</label>
+                                <div class="controls">
+                                    <select>
+                                        <option>Seleccionar ciudad</option>
+                                        <option>Ciudad 1</option>
+                                        <option>Ciudad 2</option>
+                                        <option>Ciudad 3</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Textarea -->
+                            <div class="control-group">
+                                <label class="control-label" for="textarea">Direccion</label>
+                                <div class="controls">
+                                    <textarea id="textarea" name="textarea"></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="control-group">
+                                <label class="control-label" for="textinput">email</label>
+                                <div class="controls">
+                                    <input id="textinput" name="textinput" placeholder="escriba su email" class="input-xlarge" type="text">
+                                </div>
+                            </div>
+
+                            <!-- Password input-->
+                            <div class="control-group">
+                                <label class="control-label" for="passwordinput">Password</label>
+                                <div class="controls">
+                                    <input id="passwordinput" name="passwordinput" placeholder="escriba su contrasenia" class="input-xlarge" type="password">
+                                </div>
+                            </div>
+                        </fieldset>
+
+                    </form>
+                    </div>
+                <div class="modal-footer">
+                         <ul class="nav pull-right">
+                                <a class="btn btn-info btn-large" href="registrodeventas.html"><i class="icon-plus-sign icon-white"></i> Guardar</a>
+                            </ul>
+                       
+                </div>
+            </div>
+            <script src="../assets/js/jquery.js"></script>
+            <script src="../assets/js/bootstrap.js"></script>
+            <script src="../assets/js/parsley.js"></script>
+            <script src="../assets/js/bootstrap-datetimepicker.min.js"></script>
         <script src="assets/js/jquery.js"></script>
         <script src="assets/js/bootstrap.js"></script>
         <script src="assets/js/parsley.js"></script>
