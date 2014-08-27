@@ -50,162 +50,52 @@
             </div>
         </div>
 
-        <div class="container-fluid" style="width: 100%; padding-right: 0px; padding-left: 0px; margin-right: 0px; margin-left: 0px;">
-            <a href="registrodeventas.html"><i class="icon-plus-sign"></i> Nueva Venta </a>
-            <a href="nuevoCliente.html"><i class="icon-plus-sign"></i> Nuevo Cliente </a>
-            <div class="well container">
-                <table class="table-bordered">
-                    Seleccione un cliente:
-                    <select>
-                        <option>Juan Perez</option>
-                        <option>Juan Perez2</option>
-                    </select>
-                    Tipo de factura:
-                    <select>
-                        <option>Factura</option>
-                        <option>Ticket</option>
-                        <option>Credito fiscal</option>
-                    </select>
-                    Tipo de pago:
-                    <select>
-                        <option>Credito</option>
-                        <option>Contado</option>
-                        <option>Tarjeta</option>
-                    </select>
-                    <tr>
-                        <td colspan="2">
-                            Datos del cliente
-                        </td>
-                    </tr>
-                    <tr></tr>
-                    <tr>
-                        <td>
-                            <div class="input-prepend input-append">
-                                <span class="add-on">ID</span>
-                                <input class="span2" value="000000000121" id="appendedPrependedInput" type="text" disabled>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="input-prepend input-append">
-                                <span class="add-on">Nombre</span>
-                                <input class="span2" value="Ronald" id="appendedPrependedInput" type="text">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="input-prepend input-append">
-                                <span class="add-on">Apellido</span>
-                                <input class="span2" value="Miranda" id="appendedPrependedInput" type="text">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="input-prepend input-append">
-                                <span class="add-on">DUI</span>
-                                <input class="span2" value="" id="appendedPrependedInput" type="text">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="input-prepend input-append">
-                                <span class="add-on">NIT</span>
-                                <input class="span2" value="" id="appendedPrependedInput" type="text">
-                            </div>
-                        </td>
-                        <td>
-
-                        </td>
-                    </tr>
+        <div class="container-fluid" style="width: 100%; padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px;">
+            <div class="row-fluid" style="width: 100%; margin-right: 0px; margin-left: 0px; padding-left: 0px; padding-right: 0px;">
+                <table class="table table-striped container">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Codigo Compra</th>
+                            <th>CodigoCliente</th>
+                            <th>Vendedor</th>
+                            <th>Fecha Compra</th>
+                            <th>Total</th>
+                            <th>Detalles</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>1000</td>
+                            <td>789456</td>
+                            <td>201208</td>
+                            <td>2014-28-08</td>
+                            <th>$250</th>
+                            <td><a href="#">Ver Detalles</a> <a href="#">  Cancelar</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>2000</td>
+                            <td>32544884</td>
+                            <td>2014-24-08</td>
+                            <td>2014-28-08</td>
+                            <th>$250</th>
+                            <td><a href="#">Ver Detalles</a> <a href="#">  Cancelar</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>3000</td>
+                            <td>614465</td>
+                            <td>2014-24-08</td>
+                            <td>2014-28-08</td>
+                            <th>$250</th>
+                            <td><a href="#">Ver Detalles</a> <a href="#">  Cancelar</a></td>
+                        </tr>
+                    </tbody>
                 </table>
-            </div>
-        </div>
 
-        <div class="container-fluid" style="width: 100%; padding-right: 0px; padding-left: 0px; margin-right: 0px; margin-left: 0px;">
-            <div class="well container">
-                <div class="row">
-                    Seleccione un producto:
-                    <select>
-                        <option>Producto1</option>
-                        <option>Producto2</option>
-                        <option>Produco3</option>
-                    </select>
-                    Cantidad: <input type="text" class="">
-                    <input type="submit" value="Agregar" class="btn btn-primary">
-                </div>
-                <table class="table-bordered" style="width: 100%">
-                    <br>
-                    <tr>
-                        <td><b> Tipo producto </b></td>
-                        <td><b>Marca</b></td>
-                        <td><b>Color </b> </td>
-                        <td><b> Codigo </b> </td>
-                        <td><b>Precio</b></td>
-                        <td><b>Cantidad</b></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input class="span2" value="Casco" id="appendedPrependedInput" type="text" disabled="">
-                        </td>
-                        <td>
-                            <input class="span2" value="Airbag" id="appendedPrependedInput" type="text" disabled="">
-                        </td>
-                        <td>
-                            <input class="span2" value="Rojo" id="appendedPrependedInput" type="text" disabled="">
-                        </td>
-                        <td>
-                            <input class="span2" value="9888291" id="appendedPrependedInput" type="text" disabled="">
-                        </td>
-                        <td>
-                            <div class="input-prepend input-append">
-                                <span class="add-on">$</span>
-                                <input class="span2" value="200" id="appendedPrependedInput" type="text" disabled>
-                                <span class="add-on">.00</span>
-                            </div>
-                        </td>
-                        <td>
-                            <input class="span1" value="1" id="appendedPrependedInput" type="number">
-                        </td>
-                        <td>
-                            <div class="input-prepend input-append">
-                                <button class="btn btn-primary"><i class="icon-trash icon-white"></i></button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input class="span2" value="Botas" id="appendedPrependedInput" type="text" disabled="">
-                        </td>
-                        <td>
-                            <input class="span2" value="Renegade" id="appendedPrependedInput" type="text" disabled="">
-                        </td>
 
-                        <td>
-                            <input class="span2" value="Negro" id="appendedPrependedInput" type="text" disabled="">
-                        </td>
-                        <td>
-                            <input class="span2" value="9888292" id="appendedPrependedInput" type="text" disabled="">
-                        </td>
-                        <td>
-                            <div class="input-prepend input-append">
-                                <span class="add-on">$</span>
-                                <input class="span2" value="99" id="appendedPrependedInput" type="text" disabled>
-                                <span class="add-on">.99</span>
-                            </div>
-                        </td>
-                        <td>
-                            <input class="span1" value="1" id="appendedPrependedInput" type="number">
-                        </td>
-                        <td>
-                            <div class="input-prepend input-append">
-                                <button class="btn btn-primary"><i class="icon-trash icon-white"></i></button>
-                            </div>
-                        </td>
-                    </tr>
-                </table><br>
-
-                <div class="pull-right">
-                    <h1>Total a pagar $ 299.99</h1><br>
-                    <a href="VentaProcesada.html" class="btn btn-primary btn-large"><i class="icon-ok icon-white"></i>Procesar Venta</a>
-                    <button class="btn btn-primary btn-large"><i class="icon-remove-sign icon-white"></i> Cancelar</button>
-                </div>
             </div>
         </div>
 
