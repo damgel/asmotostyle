@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ASMotoStyle | Cotizacion </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="../assets/css/bootstrap.css" rel="stylesheet" media="screen">
+        <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+    </head>
+    <body style="width: 100%;">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <table>
+                    <tr>
+                        <td><img src="../assets/img/logo2pn.png" alt="ASMotoStyle El Salvador"></td>
+                        <td>
+                            <blockquote>
+                                <h4>Sistema de ventas e inventario </h4>
+                                <b><small>ASMotoStyle</small></b>
+                            </blockquote>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="width: 100%; padding-left: 0px; padding-right: 0px;">
+            <div class="row-fluid">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <a class="brand" href="#">ASMotoStyle</a>
+                        <ul class="nav">
+                            <li><a href="homeventas.html"><i class="icon-th-list"></i> Catalogo de productos </a></li>
+                            <li><a href="cotizacion.html"><i class="icon-book"></i> Cotizacion </a></li>
+                        </ul>
+                        <ul class="nav pull-right">
+                            <li class="divider-vertical"></li>
+                            <li><a href="#modal-solicitud" data-toggle="modal"><i class="icon-plus"></i>Nuevo Pedido Especial
+                                </a></li>
+                            <li  class="active"><a href=""><i class="icon-time"></i> Seguimiento</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i> rmiranda <i class="icon-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="logoff"><i class="icon-lock"></i> Cambiar contraseña </a></li>
+                                    <li><a href="logoff"><i class="icon-question-sign"></i> Manual de usuario </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid" style="width: 100%; padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px;">
+            <div class="row-fluid" style="width: 100%; margin-right: 0px; margin-left: 0px; padding-left: 0px; padding-right: 0px;">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Codigo</th>
+                            <th>Fecha Solicitud</th>
+                            <th>Fecha Fecha Expiracion</th>
+                            <th>Tipo</th>
+                            <th>Estado</th>
+                            <th>Detalles</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>1000</td>
+                            <td>2014-24-08</td>
+                            <td>2014-28-08</td>
+                            <th>Solicitud</th>
+                            <td>Pendiente</td>
+                            <td><a href="#">Ver Detalles</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>2000</td>
+                            <td>2014-24-08</td>
+                            <td>2014-28-08</td>
+                            <th>Cotizacion</th>
+                            <td>Pendiente</td>
+                            <td><a href="#">Ver Detalles</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>3000</td>
+                            <td>2014-24-08</td>
+                            <td>2014-28-08</td>
+                            <th>Cotizacion</th>
+                            <td>Pendiente</td>
+                            <td><a href="#">Ver Detalles</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+
+        <div id="modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+                <h3 id="myModalLabel">Casco Aquam</h3>
+            </div>
+            <div class="modal-body">
+                <img class="media-object" src="../assets/img/cascos/Motoh_2008__Cascos_increibles_3850_10.jpg">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn btn-inverse" data-dismiss="modal" aria-hidden="true">Cerrar</button>
+            </div>
+        </div>
+        <style>
+            .modal-body
+            {
+                max-height:80%;
+            }
+            .modal
+            {
+                height:80%;
+                width:70%;
+                margin-left: -35%;
+            }
+            @media (max-width: 768px) {
+                .modal
+                {
+                    width:90%;
+                    margin-left: 2%;
+                }
+            }
+        </style>
+        <div id="modal-solicitud" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+                <h3 id="myModalLabel">Nueva Solicitud</h3>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <fieldset>
+                        <div class="row">
+                            <!-- Text input-->
+                            <div class="control-group">
+                                <label class="control-label" for="textinput">Tipo:</label>
+                                <div class="controls">
+                                    <input id="textinput" name="textinput" placeholder="SOLICITUD" class="input-xlarge" type="text" readonly>
+
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="control-group">
+                                <label class="control-label" for="textinput">Fecha:</label>
+                                <div class="controls">
+                                    <input id="textinput" name="textinput2" value="2014-08-22" class="input-xlarge" type="datetime" readonly>
+
+                                </div>
+                            </div>
+
+                            <!-- Select Basic -->
+                            <div class="control-group">
+                                <label class="control-label" for="selectbasic">Direccion:</label>
+                                <div class="controls">
+                                    <select id="selectbasic" name="selectbasic" class="input-xlarge">
+                                        <option>Direccion de casa</option>
+                                        <option>Otra direccion</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div  class="row">
+                            <!-- Form Name -->
+                            <p><b>Detalles del producto que desea</b></p>
+                            <!-- Text input-->
+                            <div class="control-group">
+                                <label class="control-label" for="textinput">Nombre:</label>
+                                <div class="controls">
+                                    <input id="textinput" name="textinput" placeholder="escriba el nombre del producto" class="input-xlarge" type="text">
+
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="control-group">
+                                <label class="control-label" for="textinput">Descripcion:</label>
+                                <div class="controls">
+                                    <input id="textinput" name="textinput" placeholder="describa el producto" class="input-xlarge" type="text">
+
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="control-group">
+                                <label class="control-label" for="textinput">Color:</label>
+                                <div class="controls">
+                                    <input id="textinput" name="textinput" placeholder="escriba su color" class="input-xlarge" type="text">
+
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="control-group">
+                                <label class="control-label" for="textinput">Tamanio:</label>
+                                <div class="controls">
+                                    <input id="textinput" name="textinput" placeholder="escriba su tamanio" class="input-xlarge" type="text">
+
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="control-group">
+                                <label class="control-label" for="textinput">Cantidad</label>
+                                <div class="controls">
+                                    <input id="textinput" name="textinput" placeholder="cantidad" class="input-xlarge" type="text">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="textinput">Precio estimado</label>
+                                <div class="controls">
+                                    <input id="textinput" name="textinput" placeholder="precio estimado" class="input-xlarge" type="text">
+                                </div>
+                            </div>
+
+                            <!-- File Button -->
+                            <div class="control-group">
+                                <label class="control-label" for="filebutton">Adjunte una imagen</label>
+                                <div class="controls">
+                                    <input id="filebutton" name="filebutton" class="input-file" type="file">
+                                </div>
+                            </div>
+
+                            <!-- Textarea -->
+                            <div class="control-group">
+                                <label class="control-label" for="textarea">Comentarios</label>
+                                <div class="controls">
+                                    <textarea id="textarea" name="textarea">escriba aqui sus comentarios
+                                    </textarea>
+                                </div>
+                            </div>
+
+                        </div>
+                    </fieldset>
+                </form>
+                <div class="modal-footer">
+                    <button class="btn btn btn-primary btn-large" data-dismiss="modal" aria-hidden="true">Enviar</button>
+                </div>
+            </div>
+            <script src="../assets/js/jquery.js"></script>
+            <script src="../assets/js/bootstrap.js"></script>
+            <script src="../assets/js/parsley.js"></script>
+            <script src="../assets/js/bootstrap-datetimepicker.min.js"></script>
+    </body>
+</html>
+

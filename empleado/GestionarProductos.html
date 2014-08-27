@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ASMotoStyle | Registro de ventas </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="../assets/css/bootstrap.css" rel="stylesheet" media="screen">
+        <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+    </head>
+    <body style="width: 100%;">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <table>
+                    <tr>
+                        <td><img src="../assets/img/logo2pn.png" alt="ASMotoStyle El Salvador"></td>
+                        <td>
+                            <blockquote>
+                                <h4>Sistema de ventas e inventario </h4>
+                                <b><small>ASMotoStyle</small></b>
+                            </blockquote>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="width: 100%; padding-left: 0px; padding-right: 0px;">
+            <div class="row-fluid">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <a class="brand" href="#">ASMotoStyle</a>
+                        <ul class="nav">
+                            <li class="active"><a href="GestionarProductos.html"><i class="icon-th-list"></i>Gestion de Productos</a></li>
+                            <li ><a href="registrodeventas.html"><i class="icon-list-alt"></i>Ventas </a></li>
+                            <li ><a href="inventario.html"><i class="icon-list-alt"></i>Inventario </a></li>
+                            <li><a href="reportes.html"><i class="icon-file"></i> Reportes </a></li>
+                            <li><a href="pedidos.html"><i class="icon-book"></i> Pedidos </a></li>
+                        </ul>
+                        <ul class="nav pull-right">
+                            <li class="divider-vertical"></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i> rmiranda <i class="icon-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="logoff"><i class="icon-lock"></i> Cambiar contraseña </a></li>
+                                    <li><a href="logoff"><i class="icon-question-sign"></i> Manual de usuario </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav pull-right">
+                            <li class="divider-vertical"></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Gestionar <i class="icon-tag"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class="icon-question-sign"></i>Tallas</a></li>
+                                    <li><a href="#"><i class="icon-lock"></i>Marcas</a></li>
+                                    <li><a href="#"><i class="icon-lock"></i>Categorias</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="width: 100%; padding-right: 0px; padding-left: 0px; margin-right: 0px; margin-left: 0px;">
+
+            <div class="well container">
+                <div class="row-fluid">
+
+                </div>
+                <div class="row-fluid">
+                    <form class="form-horizontal">
+                        <fieldset>
+
+                            <!-- Form Name -->
+                            <legend>Nuevo Producto</legend>
+                            <!-- Text input-->
+                            <div class="control-group">
+                                Seleccione una categoria:
+                                <select>
+                                    <option>Cat1</option>
+                                    <option>Cat2</option>
+                                </select>
+                                Seleccione una marca:
+                                <select>
+                                    <option>Marca1</option>
+                                    <option>Marca2</option>
+                                    <option>Marca3</option>
+                                </select>
+                                Promocion:
+                                <select>
+                                    <option>Si</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="textinput">Nombre:</label>
+                                <div class="controls">
+                                    <input id="textinput" name="textinput" placeholder="escriba el nombre del producto" class="input-xlarge" type="text">
+
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="control-group">
+                                <label class="control-label" for="textinput">Descripcion:</label>
+                                <div class="controls">
+                                    <input id="textinput" name="textinput" placeholder="describa el producto" class="input-xlarge" type="text">
+
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="control-group">
+                                <label class="control-label" for="textinput">Color:</label>
+                                <div class="controls">
+                                    <input id="textinput" name="textinput" placeholder="escriba su color" class="input-xlarge" type="text">
+
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="control-group">
+                                <label class="control-label" for="textinput">Tamanio:</label>
+                                <div class="controls">
+                                    <input id="textinput" name="textinput" placeholder="escriba su tamanio" class="input-xlarge" type="text">
+
+                                </div>
+                            </div>
+
+                            <!-- File Button -->
+                            <div class="control-group">
+                                <label class="control-label" for="filebutton">Adjunte una imagen</label>
+                                <div class="controls">
+                                    <input id="filebutton" name="filebutton" class="input-file" type="file">
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="control-group">
+                                <label class="control-label" for="textinput">Color</label>
+                                <div class="controls">
+                                    <input id="textinput" name="textinput" placeholder="ingrese el color del producto" class="input-xlarge" type="text">
+
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="control-group">
+                                <label class="control-label" for="textinput">Precio</label>
+                                <div class="controls">
+                                    <input id="textinput" name="textinput" placeholder="placeholder" class="input-xlarge" type="text">
+
+                                </div>
+                            </div>
+
+                            <!-- Select Basic -->
+                            <div class="control-group">
+                                <label class="control-label" for="selectbasic">Seleccione una talla</label>
+                                <div class="controls">
+                                    <select id="selectbasic" name="selectbasic" class="input-xlarge">
+                                        <option>M</option>
+                                        <option>XL</option>
+                                        <option>XXL</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button class="btn btn btn-primary btn-large"><i class="icon-plus-sign icon-white"></i>Guardar Producto</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="width: 100%; padding-right: 0px; padding-left: 0px; margin-right: 0px; margin-left: 0px;">
+            <div class="well container">
+                <div class="row">
+                    <div class="container-fluid" style="width: 100%; padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px;">
+                        <div class="row-fluid" style="width: 100%; margin-right: 0px; margin-left: 0px; padding-left: 0px; padding-right: 0px;">
+                            <div class="container">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Codigo</th>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Descripcion</th>
+                                            <th>Precio</th>
+                                            <th>Color</th>
+                                            <th>Talla</th>
+                                            <th>Categoria</th>
+                                            <th>Marca</th>
+                                            <th>Promocion</th>
+                                            <th>Mantenimiento</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>154564</td>
+                                            <th><img src="../assets/img/"> </th>
+                                            <td>Casco TA</td>
+                                            <td>Super Casco</td>
+                                            <td>$40</td>
+                                            <td>Negro</td>
+                                            <td>XL</td>
+                                            <td>Cat1</td>
+                                            <td>Harley</td>
+                                            <th>S</th>
+                                            <td>
+                                                <button class="btn btn-primary"><i class="icon-edit icon-white"></i></button>
+                                                <button class="btn btn-primary"><i class="icon-trash icon-white"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>95142</td>
+                                            <th><img src="../assets/img/"> </th>
+                                            <td>Casco TB</td>
+                                            <td>Super Casco</td>
+                                            <td>$60</td>
+                                            <td>Negro</td>
+                                            <td>XL</td>
+                                            <td>Cat1</td>
+                                            <td>Harley</td>
+                                            <th>S</th>
+                                            <td>
+                                                <button class="btn btn-primary"><i class="icon-edit icon-white"></i></button>
+                                                <button class="btn btn-primary"><i class="icon-trash icon-white"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>354106</td>
+                                            <th><img src="../assets/img/"> </th>
+                                            <td>Casco TC</td>
+                                            <td>Super Casco</td>
+                                            <td>$140</td>
+                                            <td>Negro</td>
+                                            <td>XL</td>
+                                            <td>Cat1</td>
+                                            <td>Harley</td>
+                                            <th>S</th>
+                                            <td>
+                                                <button class="btn btn-primary"><i class="icon-edit icon-white"></i></button>
+                                                <button class="btn btn-primary"><i class="icon-trash icon-white"></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../assets/js/jquery.js"></script>
+        <script src="../assets/js/bootstrap.js"></script>
+        <script src="../assets/js/parsley.js"></script>
+        <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+    </body>
+</html>
+
