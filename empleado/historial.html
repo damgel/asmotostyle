@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ASMotoStyle | Registro de ventas </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="../assets/css/bootstrap.css" rel="stylesheet" media="screen">
+        <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+    </head>
+    <body style="width: 100%;">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <table>
+                    <tr>
+                        <td><img src="../assets/img/logo2pn.png" alt="ASMotoStyle El Salvador"></td>
+                        <td>
+                            <blockquote>
+                                <h4>Sistema de ventas e inventario </h4>
+                                <b><small>ASMotoStyle</small></b>
+                            </blockquote>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="width: 100%; padding-left: 0px; padding-right: 0px;">
+            <div class="row-fluid">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <a class="brand" href="#">ASMotoStyle</a>
+                        <ul class="nav">
+                            <li><a href="GestionarProductos.html"><i class="icon-th-list"></i>Gestion de Productos</a></li>
+                            <li ><a href="registrodeventas.html"><i class="icon-list-alt"></i>Ventas </a></li><li class="active" ><a href="historial.html"><i  class="icon-list-alt"></i>Historico de Ventas </a></li>
+                            <li><a href="reportes.html"><i class="icon-file"></i> Reportes </a></li>
+                            <li><a href="pedidos.html"><i class="icon-book"></i> Pedidos </a></li>
+                        </ul>
+                        <ul class="nav pull-right">
+                            <li class="divider-vertical"></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i> rmiranda <i class="icon-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="logoff"><i class="icon-lock"></i> Cambiar contraseña </a></li>
+                                    <li><a href="logoff"><i class="icon-question-sign"></i> Manual de usuario </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="width: 100%; padding-right: 0px; padding-left: 0px; margin-right: 0px; margin-left: 0px;">
+            <a href="registrodeventas.html"><i class="icon-plus-sign"></i> Nueva Venta </a>
+            <a href="nuevoCliente.html"><i class="icon-plus-sign"></i> Nuevo Cliente </a>
+            <div class="well container">
+                <table class="table-bordered">
+                    Seleccione un cliente:
+                    <select>
+                        <option>Juan Perez</option>
+                        <option>Juan Perez2</option>
+                    </select>
+                    Tipo de factura:
+                    <select>
+                        <option>Factura</option>
+                        <option>Ticket</option>
+                        <option>Credito fiscal</option>
+                    </select>
+                    Tipo de pago:
+                    <select>
+                        <option>Credito</option>
+                        <option>Contado</option>
+                        <option>Tarjeta</option>
+                    </select>
+                    <tr>
+                        <td colspan="2">
+                            Datos del cliente
+                        </td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td>
+                            <div class="input-prepend input-append">
+                                <span class="add-on">ID</span>
+                                <input class="span2" value="000000000121" id="appendedPrependedInput" type="text" disabled>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="input-prepend input-append">
+                                <span class="add-on">Nombre</span>
+                                <input class="span2" value="Ronald" id="appendedPrependedInput" type="text">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="input-prepend input-append">
+                                <span class="add-on">Apellido</span>
+                                <input class="span2" value="Miranda" id="appendedPrependedInput" type="text">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="input-prepend input-append">
+                                <span class="add-on">DUI</span>
+                                <input class="span2" value="" id="appendedPrependedInput" type="text">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="input-prepend input-append">
+                                <span class="add-on">NIT</span>
+                                <input class="span2" value="" id="appendedPrependedInput" type="text">
+                            </div>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="width: 100%; padding-right: 0px; padding-left: 0px; margin-right: 0px; margin-left: 0px;">
+            <div class="well container">
+                <div class="row">
+                    Seleccione un producto:
+                    <select>
+                        <option>Producto1</option>
+                        <option>Producto2</option>
+                        <option>Produco3</option>
+                    </select>
+                    Cantidad: <input type="text" class="">
+                    <input type="submit" value="Agregar" class="btn btn-primary">
+                </div>
+                <table class="table-bordered" style="width: 100%">
+                    <br>
+                    <tr>
+                        <td><b> Tipo producto </b></td>
+                        <td><b>Marca</b></td>
+                        <td><b>Color </b> </td>
+                        <td><b> Codigo </b> </td>
+                        <td><b>Precio</b></td>
+                        <td><b>Cantidad</b></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="span2" value="Casco" id="appendedPrependedInput" type="text" disabled="">
+                        </td>
+                        <td>
+                            <input class="span2" value="Airbag" id="appendedPrependedInput" type="text" disabled="">
+                        </td>
+                        <td>
+                            <input class="span2" value="Rojo" id="appendedPrependedInput" type="text" disabled="">
+                        </td>
+                        <td>
+                            <input class="span2" value="9888291" id="appendedPrependedInput" type="text" disabled="">
+                        </td>
+                        <td>
+                            <div class="input-prepend input-append">
+                                <span class="add-on">$</span>
+                                <input class="span2" value="200" id="appendedPrependedInput" type="text" disabled>
+                                <span class="add-on">.00</span>
+                            </div>
+                        </td>
+                        <td>
+                            <input class="span1" value="1" id="appendedPrependedInput" type="number">
+                        </td>
+                        <td>
+                            <div class="input-prepend input-append">
+                                <button class="btn btn-primary"><i class="icon-trash icon-white"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="span2" value="Botas" id="appendedPrependedInput" type="text" disabled="">
+                        </td>
+                        <td>
+                            <input class="span2" value="Renegade" id="appendedPrependedInput" type="text" disabled="">
+                        </td>
+
+                        <td>
+                            <input class="span2" value="Negro" id="appendedPrependedInput" type="text" disabled="">
+                        </td>
+                        <td>
+                            <input class="span2" value="9888292" id="appendedPrependedInput" type="text" disabled="">
+                        </td>
+                        <td>
+                            <div class="input-prepend input-append">
+                                <span class="add-on">$</span>
+                                <input class="span2" value="99" id="appendedPrependedInput" type="text" disabled>
+                                <span class="add-on">.99</span>
+                            </div>
+                        </td>
+                        <td>
+                            <input class="span1" value="1" id="appendedPrependedInput" type="number">
+                        </td>
+                        <td>
+                            <div class="input-prepend input-append">
+                                <button class="btn btn-primary"><i class="icon-trash icon-white"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                </table><br>
+
+                <div class="pull-right">
+                    <h1>Total a pagar $ 299.99</h1><br>
+                    <a href="VentaProcesada.html" class="btn btn-primary btn-large"><i class="icon-ok icon-white"></i>Procesar Venta</a>
+                    <button class="btn btn-primary btn-large"><i class="icon-remove-sign icon-white"></i> Cancelar</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/bootstrap.js"></script>
+        <script src="assets/js/parsley.js"></script>
+        <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+    </body>
+</html>
+
