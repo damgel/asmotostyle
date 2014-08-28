@@ -1,0 +1,203 @@
+<html>
+    <head>
+        <title> ASMotoStyle </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="../assets/css/bootstrap.css" rel="stylesheet" media="screen">
+        <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+    </head>
+    <body  style="background-image: url('../assets/img/motocross_83-wallpaper-1920x1080.jpg');">
+
+        <div class="container-fluid" style="width: 100%; padding-left: 0px; padding-right: 0px;">
+            <div class="row-fluid">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <a class="brand" href="#">ASMotoStyle</a>
+                        <ul class="nav">
+                            <li class="active"><a href="#"> INICIO </a></li>
+                            <li><a href=""> QUIENES SOMOS </a></li>
+                            <li><a href=""> CATÁLOGO </a></li>
+                            <li><a href=""> CONTÁCTENOS </a></li>                            
+                        </ul>
+                        <ul class="nav pull-right">
+                            <li>
+                                <button class="btn btn-primary" id="myPopover" data-toggle="popover" data-placement="bottom" data-html="true" data-content="<form class='form-horizontal' name='formLogin' id='formLogin' action='' method='post'><div class='input-prepend'><span class='add-on'><i class='icon-envelope'></i></span><input id='prependedInput' id='usuario' name='usuario' type='text' placeholder='Escriba su email' class='span12'></div><div class='input-prepend'><span class='add-on'><i class='icon-lock'></i></span><input id='prependedInput' id='passwd' name='passwd' type='password' placeholder='Escriba su password' class='span12'></div><a href='homeventas.html' class='btn btn-inverse btn-block'>Iniciar sesión <i class='icon-check icon-white'></i></a><a href=''><br>He olvidado mi contraseña</a></form>" data-original-title="INGRESE SUS CREDENCIALES" title="INGRESE SUS CREDENCIALES"> Iniciar sesión </button>&nbsp;
+                            </li>
+                            <li><button class="btn btn-success" data-toggle="modal"  data-target="#modalRegistrarUsuario"> Registrarse </button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        
+        
+        <div class="container-fluid" style="width: 96%; padding-left: 2%; padding-right: 2%;">
+            <div class="row-fluid">
+                <div id="myCarousel" class="carousel slide">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                        <div class="active item">
+                            <img src="../assets/img/downhill_biking_helmet-wallpaper-2560x1440.jpg" alt="" style="height: 80%; width: 100%">
+                            <div class="carousel-caption">
+                                <h4> ASMotoStyle </h4>
+                                <p> Somos pasión por el motociclismo </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="../assets/img/apache_rtr_160-wallpaper-1920x1080.jpg" alt="" style="height: 80%; width: 100%">
+                            <div class="carousel-caption">
+                                <h4> ASMotoStyle </h4>
+                                <p> Solo las mejores marcas del mercado </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="../assets/img/10271647_778245682199756_7596122858263814824_n.jpg" alt="" style="height: 80%; width: 100%">
+                            <div class="carousel-caption">
+                                <h4> ASMotoStyle </h4>
+                                <p> Consulta nuestro catalogo de productos </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel nav -->
+                    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid" style="width: 96%; padding-left: 2%; padding-right: 2%;">
+            <div class="row-fluid">
+                <div class="alert alert-success">
+                    <h5> Nuestras marcas  </h5>
+                </div>                
+                <div class="hero-unit">
+                    <center>
+                        <img src="../assets/img/logos_motos.jpg" alt="">
+                    </center>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal windows para registro de usuario -->
+        <div class="modal fade"  id="modalRegistrarUsuario">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title"> Registro de clientes </h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <fieldset>                            
+                                <div class="input-prepend">
+                                    <span class="add-on">Nombre</span>
+                                    <input type="text" placeholder="Escriba su nombre" class="input-block-level">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <div class="input-prepend">
+                                    <span class="add-on">Apellido</span>
+                                    <input type="text" placeholder="Escriba su apellido" class="input-block-level">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <div class="input-prepend">
+                                    <span class="add-on">DUI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    <input type="text" placeholder="Escriba su número de DUI" class="input-block-level">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <div class="input-prepend">
+                                    <span class="add-on">NIT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    <input type="text" placeholder="Escriba su número de NIT" class="input-block-level">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <div class="input-prepend">
+                                    <span class="add-on">Telefono</span>
+                                    <input type="text" placeholder="Escriba su número número de teléfono" class="input-block-level">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <div class="input-prepend">
+                                    <span class="add-on"><i class="icon-envelope"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    <input type="text" placeholder="Escriba su diirección de correo electronico " class="input-block-level">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <div class="input-prepend">
+                                    <span class="add-on"><i class="icon-lock"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    <input type="password" placeholder="Escriba la contraseña que desea utilizar " class="input-block-level">
+                                </div>
+                            </fieldset>
+                            <fieldset>&nbsp;&nbsp;&nbsp;
+                                <select class="span3 offset1">
+                                    <option selected> - Seleccione un departamento - </option>
+                                    <option> Ahuachapán </option>
+                                    <option> Sonsonate </option>
+                                    <option> Santa Ana </option>
+                                    <option> La Libertad </option>
+                                    <option> Chalatenango </option>
+                                    <option> San Salvador </option>
+                                    <option> Cuscatlán </option>
+                                    <option> Cabañas </option>
+                                    <option> La Paz </option>
+                                    <option> Usulután </option>                                    
+                                    <option> San Vicente </option>
+                                    <option> Morazán </option>
+                                    <option> San Miguel </option>
+                                    <option> La Unión </option>
+                                </select>
+                            </fieldset>
+                            <fieldset>&nbsp;&nbsp;&nbsp;
+                                <select class="span3 offset1">
+                                    <option selected> - Seleccione un municipio - </option>
+                                    <option> Municipio 1 </option>
+                                    <option> Municipio 2 </option>
+                                    <option> Municipio 3 </option>
+                                    <option> Municipio 4 </option>
+                                    <option> Municipio 5 </option>
+                                    <option> Municipio n.... </option>                                    
+                                </select>
+                            </fieldset>
+                            <fieldset>
+                                Dirección
+                                <textarea rows="3" cols="6"></textarea>
+                            </fieldset>
+                            <fieldset>
+                                <a href="#"><i class="icon-plus"></i> Agregar otra dirección </a>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="modal-footer">                        
+                        <button type="button" class="btn btn-primary"> Registrarse <i class="icon-check icon-white"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <footer>
+            <div class="well">
+                <p> 
+                    ASMotoStyle es una marca registrada | Derechos reservados ASMotoStyle 2014 | Contacte al administrador del sitio <a href="#"> aquí </a>
+                </p>
+                
+            </div>
+        </footer> 
+    
+        
+        <script src="../assets/js/jquery.js"></script>
+        <script src="../assets/js/bootstrap.js"></script>
+        <script src="../assets/js/parsley.js"></script>
+        <script type="text/javascript">
+            $('#myButton').tooltip();
+            $('#myPopover').popover();
+        </script>        
+    </body>
+</html>

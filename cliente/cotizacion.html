@@ -6,25 +6,28 @@
         <meta name="viewport" content="width=device-width">
         <link href="../assets/css/bootstrap.css" rel="stylesheet" media="screen">
         <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+         <style>
+            .modal-body
+            {
+                max-height:80%;
+            }
+            .modal
+            {
+                height:80%;
+                width:70%;
+                margin-left: -35%;
+            }
+            @media (max-width: 768px) {
+                .modal
+                {
+                    width:90%;
+                    margin-left: 2%;
+                }
+            }
+        </style>
+        
     </head>
-    <body style="width: 100%;">
-        <div class="container-fluid">
-            <li class="pull-right"><a href="RevisarCotizacion.html"><i class="icon-shopping-cart"></i><b>Cotizacion Actual (4) </b></a></li>
-            <div class="row-fluid">
-                <table>
-                    <tr>
-                        <td><img src="../assets/img/logo2pn.png" alt="ASMotoStyle El Salvador"></td>
-                        <td>
-                            <blockquote>
-                                <h4>Sistema de ventas e inventario </h4>
-                                <b><small>ASMotoStyle</small></b>
-                            </blockquote>
-                        </td>
-                    </tr>
-                </table>
-
-            </div>
-        </div>
+    <body style="width: 100%;background-image: url('../assets/img/motocross_83-wallpaper-1920x1080.jpg');">        
 
         <div class="container-fluid" style="width: 100%; padding-left: 0px; padding-right: 0px;">
             <div class="row-fluid">
@@ -56,17 +59,8 @@
 
         <div class="container-fluid" style="width: 100%; padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px;">
             <div class="row-fluid" style="width: 100%; margin-right: 0px; margin-left: 0px; padding-left: 0px; padding-right: 0px;">
-
-                <div class="span2 bs-docs-sidenav" style="padding-left: 0px; padding-right: 0px; margin-left: 3px;">
-                    <ul class="nav nav-list bs-docs-sidenav">
-                        <li class="active"><a href="#"> Cascos <i class="icon-chevron-right pull-right"></i></a></li>
-                        <li><a href="#"> Guantes <i class="icon-chevron-right pull-right"></i></a></li>
-                        <li><a href="#"> Botas <i class="icon-chevron-right pull-right"></i></a></li>
-                        <li><a href="#"> Chaquetas <i class="icon-chevron-right pull-right"></i></a></li>
-                        <li><a href="#"> Seguridad <i class="icon-chevron-right pull-right"></i></a></li>
-                        <li><a href="#"> Accesorios <i class="icon-chevron-right pull-right"></i></a></li>
-                    </ul>
-                </div>
+                <div class="span1"></div>
+               
                 <div class="span10" style="padding-left: 0px;padding-right: 0px; margin-left: 15px; margin-right: 0px;">
                     <div class="well" style="padding-right: 0px;padding-left: 0px; width: 100%; margin-left: 0px; margin-right: 0px;">
 
@@ -76,12 +70,10 @@
                                 <i class="icon-zoom-in"></i> Ampliar imagen
                             </a>
                             <div class="media-body">
-                                <h4 class="media-heading">Casco Aquam $200.00</h4>
-                                Si piensas que lo mas importante en un casco es la seguridad que te proporciona, equipate con un Casco con Airbag. Garantía: 24 meses.<br>
-                                <i class="icon-tag"></i> Precio: $200.00
-                                <div class="media">
-                                    <button class="btn btn-primary"><i class="icon-plus-sign icon-white"></i> Agregar a cotizacion </button>
-                                    <button class="btn btn-danger disabled"><i class="icon-minus-sign icon-white"></i> Quitar de cotizacion </button>
+                                <h4 class="media-heading">Casco Aquam</h4>
+                                Cantidad <input class="span1" value="1" id="appendedPrependedInput" type="number">                                
+                                <div class="media">                                    
+                                    <button class="btn btn-danger"><i class="icon-minus-sign icon-white"></i> Quitar de cotizacion </button>
                                 </div>
                             </div>
                         </div>
@@ -92,33 +84,16 @@
                                 <i class="icon-zoom-in"></i> Ampliar imagen
                             </a>
                             <div class="media-body">
-                                <h4 class="media-heading">Casco Air bag $185.99</h4>
-                                Casco diseñado para climas lluviosos<br>
-                                <i class="icon-tag"></i> Precio: $185.99
-                                <!-- Nested media object -->
-                                <div class="media">
-                                    <button class="btn btn-primary disabled"><i class="icon-plus-sign icon-white"></i> Agregar a cotizacion </button>
+                                <h4 class="media-heading">Casco Air bag </h4>
+                                Cantidad <input class="span1" value="1" id="appendedPrependedInput" type="number">
+                                <div class="media">                                    
                                     <button class="btn btn-danger"><i class="icon-minus-sign icon-white"></i> Quitar de cotizacion </button>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="media">
-                            <a class="pull-left" href="#">
-                                <img class="media-object" src="../assets/img/cascos/casco-givi-xplus-lateral.jpg" style="width: 150px; height: 150ṕx;">
-                            </a>
-                            <div class="media-body">
-                                <h4 class="media-heading">Casco Xtreme GX10 $340.00</h4>
-                                Diseñado para deportes extremos, el caso Xtreme GX10 está diseñado especialmente para los amantes de lo extremo y que saben que la seguridad es primero!<br>
-                                <i class="icon-tag"></i> Precio: 340.00
-                                <!-- Nested media object -->
-                                <div class="media">
-                                    <button class="btn btn-primary disabled"><i class="icon-plus-sign icon-white"></i> Agregar a cotizacion </button>
-                                    <button class="btn btn-danger"><i class="icon-minus-sign icon-white"></i> Quitar de cotizacion </button>
-                                </div>
-                            </div>
-                        </div>
-
+                        <br>
+                        <button class="btn-primary btn-large pull-right"> Solicitar cotización </button>
+                        <br><br>
                     </div>
                 </div>
 
@@ -136,139 +111,7 @@
                 <button class="btn btn btn-inverse" data-dismiss="modal" aria-hidden="true">Cerrar</button>
             </div>
         </div>
-        <style>
-            .modal-body
-            {
-                max-height:80%;
-            }
-            .modal
-            {
-                height:80%;
-                width:70%;
-                margin-left: -35%;
-            }
-            @media (max-width: 768px) {
-                .modal
-                {
-                    width:90%;
-                    margin-left: 2%;
-                }
-            }
-        </style>
-        <div id="modal-solicitud" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-header">
-                <h3 id="myModalLabel">Nueva Solicitud</h3>
-            </div>
-            <div class="modal-body">
-                <form class="form-horizontal">
-                    <fieldset>
-                        <div class="row">
-                            <!-- Text input-->
-                            <div class="control-group">
-                                <label class="control-label" for="textinput">Tipo:</label>
-                                <div class="controls">
-                                    <input id="textinput" name="textinput" placeholder="SOLICITUD" class="input-xlarge" type="text" readonly>
 
-                                </div>
-                            </div>
-
-                            <!-- Text input-->
-                            <div class="control-group">
-                                <label class="control-label" for="textinput">Fecha:</label>
-                                <div class="controls">
-                                    <input id="textinput" name="textinput2" value="2014-08-22" class="input-xlarge" type="datetime" readonly>
-
-                                </div>
-                            </div>
-
-                            <!-- Select Basic -->
-                            <div class="control-group">
-                                <label class="control-label" for="selectbasic">Direccion:</label>
-                                <div class="controls">
-                                    <select id="selectbasic" name="selectbasic" class="input-xlarge">
-                                        <option>Direccion de casa</option>
-                                        <option>Otra direccion</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div  class="row">
-                            <!-- Form Name -->
-                            <p><b>Detalles del producto que desea</b></p>
-                            <!-- Text input-->
-                            <div class="control-group">
-                                <label class="control-label" for="textinput">Nombre:</label>
-                                <div class="controls">
-                                    <input id="textinput" name="textinput" placeholder="escriba el nombre del producto" class="input-xlarge" type="text">
-
-                                </div>
-                            </div>
-
-                            <!-- Text input-->
-                            <div class="control-group">
-                                <label class="control-label" for="textinput">Descripcion:</label>
-                                <div class="controls">
-                                    <input id="textinput" name="textinput" placeholder="describa el producto" class="input-xlarge" type="text">
-
-                                </div>
-                            </div>
-
-                            <!-- Text input-->
-                            <div class="control-group">
-                                <label class="control-label" for="textinput">Color:</label>
-                                <div class="controls">
-                                    <input id="textinput" name="textinput" placeholder="escriba su color" class="input-xlarge" type="text">
-
-                                </div>
-                            </div>
-
-                            <!-- Text input-->
-                            <div class="control-group">
-                                <label class="control-label" for="textinput">Tamanio:</label>
-                                <div class="controls">
-                                    <input id="textinput" name="textinput" placeholder="escriba su tamanio" class="input-xlarge" type="text">
-
-                                </div>
-                            </div>
-
-                            <!-- Text input-->
-                            <div class="control-group">
-                                <label class="control-label" for="textinput">Cantidad</label>
-                                <div class="controls">
-                                    <input id="textinput" name="textinput" placeholder="cantidad" class="input-xlarge" type="text">
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label" for="textinput">Precio estimado</label>
-                                <div class="controls">
-                                    <input id="textinput" name="textinput" placeholder="precio estimado" class="input-xlarge" type="text">
-                                </div>
-                            </div>
-
-                            <!-- File Button -->
-                            <div class="control-group">
-                                <label class="control-label" for="filebutton">Adjunte una imagen</label>
-                                <div class="controls">
-                                    <input id="filebutton" name="filebutton" class="input-file" type="file">
-                                </div>
-                            </div>
-
-                            <!-- Textarea -->
-                            <div class="control-group">
-                                <label class="control-label" for="textarea">Comentarios</label>
-                                <div class="controls">
-                                    <textarea id="textarea" name="textarea">escriba aqui sus comentarios
-                                    </textarea>
-                                </div>
-                            </div>
-
-                        </div>
-                    </fieldset>
-                </form>
-                <div class="modal-footer">
-                    <button class="btn btn btn-primary btn-large" data-dismiss="modal" aria-hidden="true">Enviar</button>
-                </div>
-            </div>
             <script src="../assets/js/jquery.js"></script>
             <script src="../assets/js/bootstrap.js"></script>
             <script src="../assets/js/parsley.js"></script>
